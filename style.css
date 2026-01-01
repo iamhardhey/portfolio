@@ -3,11 +3,10 @@
 ========================= */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
+    margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                  Roboto, Helvetica, Arial, sans-serif;
     background-color: #0e1116;
@@ -20,15 +19,16 @@ body {
    TYPOGRAPHY
 ========================= */
 h1, h2, h3, h4 {
+    margin: 0;
+    color: #f1f1f1;
     font-weight: 600;
     letter-spacing: 0.3px;
-    color: #f1f1f1;
 }
 
 p {
+    margin: 0 0 16px;
     color: #b9b9b9;
     font-size: 0.98rem;
-    margin-bottom: 16px;
 }
 
 /* =========================
@@ -38,29 +38,29 @@ p {
     position: sticky;
     top: 0;
     z-index: 100;
-    padding: 18px 40px;
+    padding: 22px 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(14,17,22,0.95);
     backdrop-filter: blur(6px);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
 }
 
 .logo {
     font-size: 18px;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
 .nav {
     display: flex;
-    gap: 22px; /* default desktop gap */
+    gap: 20px;
 }
 
 .nav a {
-    font-size: 12.5px;
+    font-size: 13px;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
@@ -76,15 +76,15 @@ p {
    HERO
 ========================= */
 .main {
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 160px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .hero {
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
     border-radius: 50%;
     background: #141821;
     display: flex;
@@ -92,18 +92,18 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 36px;
+    padding: 40px;
     border: 1px solid rgba(255,255,255,0.04);
 }
 
 .hero h2 {
-    font-size: 1.3rem;
-    letter-spacing: 1.8px;
+    font-size: 1.35rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .divider {
-    width: 40px;
+    width: 42px;
     height: 1px;
     background-color: #6f7b8f;
     margin: 18px 0 22px;
@@ -114,8 +114,8 @@ p {
     padding: 10px 22px;
     border: 1px solid #6f7b8f;
     color: #e5e5e5;
-    font-size: 12.5px;
-    letter-spacing: 0.8px;
+    font-size: 13px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     transition: all 0.25s ease;
 }
@@ -131,26 +131,18 @@ p {
 .section {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: 100px 24px;
     text-align: center;
 }
 
 .section h3 {
-    font-size: 1.85rem;
-    margin-bottom: 22px;
-}
-
-.section p {
-    font-size: 1rem;
-    color: #cccccc;
-    max-width: 760px;
-    margin: 0 auto 20px;
+    font-size: 1.9rem;
+    margin-bottom: 24px;
 }
 
 .section.light {
     background-color: #121722;
     border: 1px solid rgba(255,255,255,0.04);
-    border-radius: 10px;
 }
 
 /* =========================
@@ -159,22 +151,21 @@ p {
 .cards {
     display: flex;
     justify-content: center;
-    gap: 28px;
+    gap: 36px;
     flex-wrap: wrap;
     margin-top: 50px;
 }
 
 .card {
-    width: 240px;
-    padding: 28px;
+    width: 260px;
+    padding: 34px;
     background-color: #141a26;
     border: 1px solid rgba(255,255,255,0.04);
-    border-radius: 8px;
 }
 
 .card h4 {
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 1.05rem;
+    margin-bottom: 12px;
 }
 
 .card p {
@@ -187,29 +178,28 @@ p {
 .about-section {
     max-width: 1000px;
     margin: 100px auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
 .about-container {
     display: flex;
-    gap: 48px;
+    gap: 56px;
     align-items: center;
-    padding: 48px;
+    padding: 56px;
     background-color: #121722;
     border: 1px solid rgba(255,255,255,0.04);
-    border-radius: 10px;
 }
 
 .about-image img {
-    width: 180px;
-    height: 180px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .about-text h2 {
-    font-size: 2rem;
-    margin-bottom: 16px;
+    font-size: 2.2rem;
+    margin-bottom: 18px;
 }
 
 .about-text strong {
@@ -221,18 +211,17 @@ p {
 ========================= */
 .skills {
     display: flex;
-    gap: 12px;
+    gap: 14px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 24px;
+    margin-top: 26px;
 }
 
 .skills span {
-    padding: 7px 14px;
+    padding: 8px 16px;
     border: 1px solid #6f7b8f;
     font-size: 0.85rem;
     color: #d8d8d8;
-    border-radius: 8px;
 }
 
 /* =========================
@@ -241,20 +230,19 @@ p {
 .contact-section {
     max-width: 900px;
     margin: 100px auto;
-    padding: 60px 20px;
+    padding: 70px 24px;
     text-align: center;
     background-color: #121722;
     border: 1px solid rgba(255,255,255,0.04);
-    border-radius: 10px;
 }
 
 .contact-section h2 {
-    font-size: 2.2rem;
-    margin-bottom: 18px;
+    font-size: 2.3rem;
+    margin-bottom: 22px;
 }
 
 .contact-info p {
-    font-size: 0.95rem;
+    font-size: 0.98rem;
 }
 
 .contact-info a {
@@ -270,20 +258,19 @@ p {
    SOCIAL CTA
 ========================= */
 .social-cta {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .social-links a {
     display: inline-block;
-    margin: 8px;
-    padding: 10px 20px;
+    margin: 10px;
+    padding: 10px 22px;
     border: 1px solid #6f7b8f;
     color: #e5e5e5;
-    font-size: 12.5px;
+    font-size: 13px;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
+    letter-spacing: 1px;
     text-decoration: none;
-    border-radius: 8px;
     transition: all 0.25s ease;
 }
 
@@ -297,51 +284,28 @@ p {
 ========================= */
 .site-footer {
     text-align: center;
-    padding: 30px 20px;
+    padding: 34px 20px;
     background-color: #0b0e13;
     color: #8a8a8a;
     font-size: 13px;
 }
 
 /* =========================
-   FULL RESPONSIVE
+   RESPONSIVE
 ========================= */
+@media (max-width: 768px) {
+    .hero {
+        width: 300px;
+        height: 300px;
+    }
 
-/* MOBILE (≤600px) */
-@media (max-width: 600px) {
-    body { font-size: 15px; }
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
-    .header { padding: 14px 16px; }
-    .nav { gap: 8px; } /* TIGHT MOBILE NAV */
-    .nav a { font-size: 11px; padding: 4px 6px; }
-
-    .hero { width: 260px; height: 260px; padding: 28px; }
-    .hero h2 { font-size: 1rem; }
-
-    .section { padding: 60px 16px; }
-    .section h3 { font-size: 1.4rem; }
-
-    .cards { flex-direction: column; gap: 20px; }
-    .card { width: 100%; max-width: 300px; }
-
-    .about-container { flex-direction: column; gap: 20px; padding: 32px; }
-    .about-text h2 { font-size: 1.7rem; }
-
-    .contact-section { padding: 40px 16px; }
-    .contact-section h2 { font-size: 1.8rem; }
-}
-
-/* TABLET (≤1024px) */
-@media (max-width: 1024px) {
-    .header { padding: 18px 28px; }
-    .section { padding: 80px 28px; }
-    .about-container { padding: 40px; gap: 36px; }
-    .cards { gap: 26px; }
-}
-
-/* LARGE SCREENS (≥1400px) */
-@media (min-width: 1400px) {
-    .section, .about-section, .contact-section { max-width: 1150px; }
-    .hero { width: 460px; height: 460px; }
-    .hero h2 { font-size: 1.45rem; }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
 }
